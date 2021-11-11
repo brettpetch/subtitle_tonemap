@@ -42,10 +42,6 @@ fn main() -> std::io::Result<()> {
     let input = opt.input;
     let output = opt.output;
 
-    assert!(
-        opt.percentage <= 100.0,
-        "Percentage has to be between 0 and 100."
-    );
     let percentage: f32 = opt.percentage / 100.0;
     let fixed: bool = opt.fixed;
 
